@@ -1,5 +1,11 @@
-//Literal meaning
-type Quantity = 50 | 100
-let quantity: Quantity = 50
+//Nullable types
 
-type Metric = 'cm' | 'inch'
+function greet(name: string | null| undefined) {
+        if (name)
+                console.log(name.toUpperCase())
+        else
+                console.log("Hola")
+}
+
+greet(undefined)
+greet(null)
