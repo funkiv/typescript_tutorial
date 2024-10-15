@@ -1,6 +1,5 @@
 "use strict";
-let age = 20;
-if (age < 50)
-    age += 10;
-console.log(age);
+let user = [1, 'Charles'];
+user[0].valueOf();
+user[1].charAt(0);
 //# sourceMappingURL=index.js.map
