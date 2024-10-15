@@ -1,8 +1,13 @@
-let employee: {
+//Can define type object in a single place
+
+type Employee = {
         readonly id: number,
         name: string,
         retire: (date: Date) => void
-} = { 
+
+}
+
+let employee:Employee = { 
         id: 1, 
         name: "Charles", 
         retire: (date:Date) => {
