@@ -1,16 +1,14 @@
-//Can define type object in a single place
-
-type Employee = {
-        readonly id: number,
-        name: string,
-        retire: (date: Date) => void
-
+//Union allowing weight to consist of both type number and string
+function kgToLbs(weight: number | string) {
+        //Narrowing
+        //Allows compiler to narrow and know what type will be in each if block
+        //Check out intellisense
+        if(typeof weight === 'number') {
+                return weight * 2.2
+        } else {
+                return parseInt(weight) * 2.2
+        }
 }
 
-let employee:Employee = { 
-        id: 1, 
-        name: "Charles", 
-        retire: (date:Date) => {
-                console.log(date)
-        }
-} 
+kgToLbs(10)
+kgToLbs('10kg')
