@@ -1,4 +1,13 @@
-let age: number = 20;
-if (age < 50) age += 10; 
+let sales = 123_456_789
 
-console.log(age);
+let course: String = 'Typescript'
+
+let is_published = true
+
+let level
+level = 1
+level = 'a'
+
+function render(document: any) {
+        console.log(document)
+}
